@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.17.5
+# v0.17.7
 
 using Markdown
 using InteractiveUtils
@@ -37,9 +37,11 @@ begin
 	using Distributions
 	using DifferentialEquations
 	using ParameterizedFunctions
-	
+	import Logging	
 	import PlutoUI: combine
-	
+
+	Logging.disable_logging(Logging.Warn)
+
 		md"""
 	# Virtual Volatility-Humidity Tandem DMA 
 		
