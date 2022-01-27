@@ -93,9 +93,9 @@ begin
 
 	## DMA Basics
 	The cylindrical differential mobility analyzer is an annular capacitor. The column's properties are defined by the radii $r_1$, $r_2$, the length of the aerosol path, $l$. Operation conditions are defined by the the electric potential $v$ applied across the annulus and the four flow rates: sheath flow, $q_{sh}$, polydisperse aerosol flow $q_a$, excess flow, $q_{ex}$, and monodisperse sample flow, $q_{sa}$. Throughout this work it is assumed that the flows are balanced, i.e. $q_{sh} = q_{ex}$ and $q_{sa} = q_a$. The two flows tracked are $q_{sh}$ and $q_{sa}$. Dimensions and flow range for one commonly used model are provided in Table 1 below. 
+	$(Resource("https://raw.githubusercontent.com/mdpetters/webapps/main/virtualDMA/notebooks/dma.png", :width => 400))
 
-	$(LocalResource("./dma.png", :width => 400))
-	$(LocalResource("./table.png", :width => 400))
+	 $(Resource("https://raw.githubusercontent.com/mdpetters/webapps/main/virtualDMA/notebooks/table.png", :width => 400))
 
 	"""
 end
@@ -126,13 +126,13 @@ begin
 	
 	In a typical tandem DMA, dried, charge equilibrated particles are classified in DMA 1. The flow is split between a condensation particle counter (CPC) and some conditioner. Conditioners may humidify the particles to grow them, heat the particles to evaporate them (thermodenuder), store the particles to evaporate them (isothermal evaporation), or pass them through an ion field to alter the charge distribution. The changed mobility distribution is measured using the second DMA that is operated in scanning or stepping mode. 
 
-	$(LocalResource("./tdma.png", :width => 500))
+	$(Resource("https://raw.githubusercontent.com/mdpetters/webapps/main/virtualDMA/notebooks/tdma.png", :width => 500))
 
 	## Bipolar charge distribution
 
 	The bipolar charge conditioner (neutralizer) imparts a statistical charge distribution on the particles. Note that multiply charged particles are more prevalent at larger diameters. Also note that the charging of +1 and -1 is asymmetric.
 
-	$(LocalResource("./charge.png", :width => 900))
+	$(Resource("https://raw.githubusercontent.com/mdpetters/webapps/main/virtualDMA/notebooks/charge.png", :width => 900))
 
 	
 	"""
@@ -143,7 +143,7 @@ end
 	combine() do Child
 		md"""
 		### Input
-		Please select the input. Once complete, press the **Confirm** button to update the calculations. Note that check boxes evaluate immediately.
+		Please select the input. Once complete, press the **Submit** button to update the calculations. Note that check boxes evaluate immediately.
 
 		**Aerosol size distribution:** The multi-modal lognormal size distribution is 
 		
