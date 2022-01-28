@@ -363,7 +363,9 @@ begin
 		    Theme(plot_padding = [5mm, 5mm, 0mm, 0mm]),
 		)	
 		p0 = pdfplot(𝕟ᶜⁿ, Dd, Λ₁,m)
-	
+		
+		println("Executed Main Plot")
+
 		return hstack(p0, p1)
 	end
 

@@ -5,7 +5,7 @@
 using SHA
 
 file = "swarm_virtualdma"    # hashfile
-ID = "9cbcd28d607f"          # ID of an untainted fully executed app
+ID = "3733099a9c06"          # ID of an untainted fully executed app
 hashlog(ID) = (read(`docker logs $(ID)`) |> sha256 |> bytes2hex)
 
 open(f -> write(f, hashlog(ID)), file, "w")
