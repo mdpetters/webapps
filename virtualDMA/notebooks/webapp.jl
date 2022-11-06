@@ -41,13 +41,11 @@ begin
 	import PlutoUI: combine
 
 	Logging.disable_logging(Logging.Warn)
+	md"""
+	# Virtual Volatility-Humidity TDMA 
 
-		md"""
-	# Virtual Volatility-Humidity Tandem DMA 
-		
-	Welcome to this interactive application. After each change, the notebook revaluates all of the cells. This behavior is equivalent to that of a spreadsheet application, where all cells are linked. Use show/hide code icon to the left view the code. If you have questions or comments, please send an email to  Markus Petters: **mdpetter@ncsu.edu**	 
+	Welcome to this educational notebook simulating the transfer through a tandem differential mobility analyzer system. This work was supported by the U.S. National Science Foundation grant AGS-2037704. 
 	"""
-
 end
 
 # ╔═╡ 0128e0b7-1911-49f0-964c-f0a3f3c90e56
@@ -86,6 +84,18 @@ end
 end
 
 end
+
+# ╔═╡ de2272eb-5476-4112-a94a-cf04847a263c
+md"""
+
+$(Resource("https://raw.githubusercontent.com/mdpetters/webapps/main/virtualDMA/notebooks/nsflogo.jpg", :width => 300)) 
+		
+This notebook is a "reactive" interactive application. After each change, the notebook revaluates all of the cells. This behavior is equivalent to that of a spreadsheet, where all cells are linked. Use show/hide code icon to the left view the code. If you have questions or comments, please send an email to  Markus Petters: **mdpetter@ncsu.edu**.
+
+#### Purpose
+
+The main purpose of this resource is instructional. The instructor guides the students through the basic theory of operation of a tandem differential mobility analyzer system. Changing the inputs allows students to visualize the role of multiply charged particles in shaping the tandem DMA response function.    
+"""
 
 # ╔═╡ 93a3dafa-fafb-45d6-9cf0-53984e0bf56b
 begin
@@ -434,6 +444,7 @@ end
 
 # ╔═╡ Cell order:
 # ╟─dc1a7d9c-fad9-11eb-3360-4be773edd179
+# ╟─de2272eb-5476-4112-a94a-cf04847a263c
 # ╟─93a3dafa-fafb-45d6-9cf0-53984e0bf56b
 # ╟─6ad7bd8b-5c5e-492c-abfd-0703ee7ebdcf
 # ╟─6e7f331c-76cf-42ee-95e3-1e21cca3f553
