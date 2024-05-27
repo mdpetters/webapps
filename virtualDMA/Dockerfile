@@ -1,4 +1,4 @@
-FROM julia:1.8
+FROM docker.io/julia:1.10
 
 ENV USER pluto
 ENV USER_HOME_DIR /home/${USER}

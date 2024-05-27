@@ -90,7 +90,7 @@ md"""
 
 $(Resource("https://raw.githubusercontent.com/mdpetters/webapps/main/virtualDMA/notebooks/nsflogo.jpg", :width => 300)) 
 		
-This notebook is a "reactive" interactive application. After each change, the notebook revaluates all of the cells. This behavior is equivalent to that of a spreadsheet, where all cells are linked. Use show/hide code icon to the left view the code. If you have questions or comments, please send an email to  Markus Petters: **mdpetter@ncsu.edu**.
+This notebook is a "reactive" interactive application. After each change, the notebook revaluates all of the cells. This behavior is equivalent to that of a spreadsheet, where all cells are linked. Use show/hide code icon to the left view the code. If you have questions or comments, please send an email to  Markus Petters: [markus.petters@ucr.edu](mailto:markus.petters@ucr.edu).
 
 #### Purpose
 
