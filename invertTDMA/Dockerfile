@@ -1,4 +1,4 @@
-FROM julia:1.7
+FROM julia:1.10
 
 RUN apt-get update
 RUN apt-get -y install fonts-dejavu-core xfonts-base zip  

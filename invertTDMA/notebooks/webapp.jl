@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.18.1
+# v0.19.45
 
 using Markdown
 using InteractiveUtils
@@ -17,7 +17,7 @@ end
 # ╔═╡ 37ff1a70-02b5-11eb-1507-41208db7f97c
 begin
 	import Pkg
-    Pkg.activate(Base.current_project())
+        Pkg.activate(Base.current_project())
 	
 	using DifferentialMobilityAnalyzers
 	using Gadfly
@@ -46,6 +46,8 @@ begin
 	using ProgressLogging
 	
 	import PlutoUI: combine
+        Logging.disable_logging(Logging.Warn)
+	
 end
 
 # ╔═╡ fb64cac1-928f-4555-8cdc-fc11c8adc1a1
@@ -211,17 +213,42 @@ end
 end
 
 # ╔═╡ 566cb6a0-0332-11eb-36e1-3bd2acf329ab
-md" ### Using Block
-Loads all of the packages. Packages must be added to the project/environment before they can be used. 
-"
+md"""
+$(TableOfContents(depth=5))
+# Introduction 
+
+Welcome to this interactive tandem DMA inversion tool. It is to illustrate the inversion method described in [Petters 2021](https://amt.copernicus.org/articles/14/7909/2021/amt-14-7909-2021.pdf).
+
+After each change, the reactive Pluto notebook revaluates all of the cells. This behavior is equivalent to that of a spreadsheet application.  
+	
+$(Markdown.MD(Markdown.Admonition("note", "Author", [md" 
+If you have questions or comments, please send an email to\
+	Markus Petters: **markus.petters@ucr.edu**"])))
+
+## Acknowledgements
+
+$(Resource("https://raw.githubusercontent.com/mdpetters/webapps/main/virtualDMA/notebooks/ASR.png", :width => 300)) 
+
+$(Resource("https://raw.githubusercontent.com/mdpetters/webapps/main/virtualDMA/notebooks/nsflogo.jpg", :width => 300)) 
+
+The tandem DMA inversion code was supported by DOE grant SC 0021074. Development of this online tool was supported by NSF grant AGS-2037704. Infrastructure for hosting this notebook online is supported by NSF-AGS-2112978.
+
+## References
+
+Petters, M.D. (2018) A language to simplify computation of differential mobility analyzer response functions Aerosol Science & Technology, 52 (12), 1437-1451, https://doi.org/10.1080/02786826.2018.1530724.
+
+Petters, M. D.: Revisiting matrix-based inversion of scanning mobility particle sizer (SMPS) and humidified tandem differential mobility analyzer (HTDMA) data, Atmos. Meas. Tech., 14, 7909–7928, https://doi.org/10.5194/amt-14-7909-2021, 2021.
+"""
+
+
 
 # ╔═╡ a817257a-e8aa-4e00-890f-dea76d03de76
-md" ### Module DataLoader
+md" # Module DataLoader
 This module loads the data and places it in the appropriate data structre. Modify this module if you like to work with a different file format or alternatively, format the data as in the provided sample files. 
 "
 
 # ╔═╡ 1c253882-0332-11eb-2f0b-43c1b874a6ab
-md" ### Load Files
+md" # Load Files
 "
 
 # ╔═╡ 5de4e17d-af63-476a-9a32-e928ca3e229a
@@ -267,7 +294,7 @@ end
 	end
 
 # ╔═╡ 84c14876-f2fd-4bef-9829-75b2dc702861
-md" ### Module TDMA 
+md" # Module TDMA 
 
 "
 
@@ -275,7 +302,7 @@ md" ### Module TDMA
 Markdown.MD( Markdown.Admonition("info", "Information", [md" The code applies the concepts from [DifferentialMobilityAnalyzers.jl](https://github.com/mdpetters/DifferentialMobilityAnalyzers.jl). The TDMA method is described in [Petters 2021](https://amt.copernicus.org/articles/14/7909/2021/amt-14-7909-2021.pdf). Modify this module to change the model (e.g. swap charge functions). You can set properties such as flow rates using the interactive controls below."]))
 
 # ╔═╡ 2984464e-0332-11eb-303d-cf9502464cbc
-md""" ### Functions
+md""" ## Functions
 Each cell contains a function that links the control elements/inputs and generates the outputs. The fields in the "Input Conditions" section are queried inside these functions. The main function is invertTDMA. Modify this function if you like to alter the behavior of the app.
 """
 
@@ -428,7 +455,7 @@ begin
 	
 	md"""
 
-	### Input Conditions
+	## Input Conditions
 	
 	**Configure DMAs and Size Grid**
 	
@@ -657,7 +684,7 @@ begin
 	# filename2 = "figures.zip"
 	# yy = DownloadButton(read(filename2), basename(filename2))
 
-	md"""**Download Files**
+	md""" # Download Output
 
 	The report.csv file contains a comma separated file with the data frame shown above. 
 	
