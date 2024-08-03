@@ -1,8 +1,8 @@
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.10.3"
+julia_version = "1.10.0"
 manifest_format = "2.0"
-project_hash = "d5e1f9a1656b809c9f2a44a0fa9560cd12d5ac4b"
+project_hash = "f5cd47707b1e77a6a375a749f6534fdb7949fb00"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "016833eb52ba2d6bea9fcb50ca295980e728ee24"
@@ -238,9 +238,9 @@ version = "0.1.12"
 
 [[deps.CodecZlib]]
 deps = ["TranscodingStreams", "Zlib_jll"]
-git-tree-sha1 = "59939d8a997469ee05c4b4944560a820f9ba0d73"
+git-tree-sha1 = "b8fe8546d52ca154ac556809e10c75e6e7430ac8"
 uuid = "944b1d66-785c-5afd-91f1-9de20f533193"
-version = "0.7.4"
+version = "0.7.5"
 
 [[deps.ColorTypes]]
 deps = ["FixedPointNumbers", "Random"]
@@ -289,7 +289,7 @@ weakdeps = ["Dates", "LinearAlgebra"]
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
-version = "1.1.1+0"
+version = "1.0.5+1"
 
 [[deps.Compose]]
 deps = ["Base64", "Colors", "DataStructures", "Dates", "IterTools", "JSON", "LinearAlgebra", "Measures", "Printf", "Random", "Requires", "Statistics", "UUIDs"]
@@ -452,9 +452,7 @@ version = "7.13.0"
 
 [[deps.DifferentialMobilityAnalyzers]]
 deps = ["BenchmarkTools", "CSV", "Calculus", "DataFrames", "Distributions", "Interpolations", "Lazy", "LinearAlgebra", "MLStyle", "Memoize", "Random", "RegularizationTools", "SpecialFunctions", "Test", "Underscores"]
-git-tree-sha1 = "1cff0e31c6c85bf7184476fd52939a34a3218a4e"
-repo-rev = "master"
-repo-url = "https://github.com/mdpetters/DifferentialMobilityAnalyzers.jl.git"
+path = "../DifferentialMobilityAnalyzers"
 uuid = "050a7be8-18f9-52d6-bdba-0a194485d082"
 version = "2.5.6"
 
@@ -1233,7 +1231,7 @@ weakdeps = ["Adapt"]
 [[deps.OpenBLAS_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Libdl"]
 uuid = "4536629a-c528-5b80-bd46-f80d51c5b363"
-version = "0.3.23+4"
+version = "0.3.23+2"
 
 [[deps.OpenLibm_jll]]
 deps = ["Artifacts", "Libdl"]
@@ -1843,9 +1841,9 @@ uuid = "0796e94c-ce3b-5d07-9a54-7f471281c624"
 version = "0.5.29"
 
 [[deps.TranscodingStreams]]
-git-tree-sha1 = "5d54d076465da49d6746c647022f3b3674e64156"
+git-tree-sha1 = "96612ac5365777520c3c5396314c8cf7408f436a"
 uuid = "3bb67fe8-82b1-5028-8e26-92a6c54297fa"
-version = "0.10.8"
+version = "0.11.1"
 weakdeps = ["Random", "Test"]
 
     [deps.TranscodingStreams.extensions]
