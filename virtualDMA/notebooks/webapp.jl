@@ -33,7 +33,8 @@ begin
 	using DataFrames
 	using LinearAlgebra
 	using Printf
-	using Random
+	using Memoize
+        using Random
 	using Distributions
 	using DifferentialEquations
 	using ParameterizedFunctions
